@@ -1,4 +1,4 @@
-import { BAtTLE_ASSETS_KEYS, BATTLE_BACKGROUND_ASSETS_KEYS, HEALTH_BAR_ASSETS_KEYS, MONSTER_ASSETS_KEYS } from "../assets/asset-keys.js";
+import { BATTLE_ASSETS_KEYS, BATTLE_BACKGROUND_ASSETS_KEYS, HEALTH_BAR_ASSETS_KEYS, MONSTER_ASSETS_KEYS } from "../assets/asset-keys.js";
 import Phaser from "../lib/phaser.js";
 import { SCENE_KEYS } from "./scene-keys.js";
 
@@ -23,7 +23,7 @@ export class PreloadScene extends Phaser.Scene {
 
         // battle assets
         this.load.image(
-            BAtTLE_ASSETS_KEYS.HEALTH_BAR_BACKGROUND,
+            BATTLE_ASSETS_KEYS.HEALTH_BAR_BACKGROUND,
             `${kenneysAssetsPath}/ui-space-expansion/custom-ui.png`,
         );
 
@@ -56,6 +56,6 @@ export class PreloadScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(0, 0, BATTLE_BACKGROUND_ASSETS_KEYS.FOREST).setOrigin(0);
+        this.scene.start(SCENE_KEYS.BATTLE_SCENE)
     }
 }

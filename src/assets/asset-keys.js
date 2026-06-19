@@ -7,7 +7,7 @@ export const MONSTER_ASSETS_KEYS = Object.freeze({
     CARNODUSK: 'CARNODUSK',
 });
 
-export const BAtTLE_ASSETS_KEYS = Object.freeze({
+export const BATTLE_ASSETS_KEYS = Object.freeze({
     HEALTH_BAR_BACKGROUND: 'HEALTH_BAR_BACKGROUND',
 });
 export const HEALTH_BAR_ASSETS_KEYS = Object.freeze({
